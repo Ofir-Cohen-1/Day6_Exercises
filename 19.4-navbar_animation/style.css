@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: yellow;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .menu:before {
+    content: "";
+    position: absolute;
+    border-top: 2px solid black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .menu:hover::before {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  
+  .menu:after {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .menu:hover::after {
+    transform: translateX(0px);
+    opacity: 1;
+  }

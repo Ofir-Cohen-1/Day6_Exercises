@@ -1,0 +1,84 @@
+:root{
+    --header-color: orange;
+    --aside-color: olivedrab;
+    --main-color: darkorchid;
+    --footer-color: lightblue;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    min-height: 100vh;
+}
+
+#container{
+max-width: 90%;
+margin: 10px auto;
+}
+
+.box{
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+.box p{
+   font-size: 22px;
+}
+
+header{
+    background: var(--header-color);
+    text-align: center;
+   margin-bottom:5px;
+}
+
+aside{
+    background: var(--aside-color);
+    float: left;
+    width: 30%;
+    height: calc(100vh - 250px);
+}
+
+main{
+    background-color: var(--main-color);
+    float: right;
+    width: 68%;
+    height: calc(100vh - 250px);
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+footer{
+    top: 100px;
+    background-color: var(--footer-color);
+    text-align: center;;
+    /* height: calc(100vh - 845px);
+    clear: both; */
+
+}
+
+.clr{
+    clear: both;
+
+}
+
+.fa-facebook{ 
+    color: blue;
+    font-size: 17px;
+}
+
+.fa-linkedin{
+    color: blue;
+    font-size: 17px;
+}
+
+ul li {
+    list-style-type: none;
+}
